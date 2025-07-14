@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva - Ingeniería de Sistemas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Malla Curricular Interactiva</h1>
+
+  <div class="malla">
+
+    <!-- PRIMER SEMESTRE -->
+    <div class="semestre">
+      <h2>1° Semestre</h2>
+      <div class="ramo" data-id="MAT101">Algebra I</div>
+      <div class="ramo" data-id="ADM101">Administración I</div>
+      <div class="ramo" data-id="CON101">Contabilidad I</div>
+      <div class="ramo" data-id="PRG101">Programación I</div>
+      <div class="ramo" data-id="INV101">Expresión Oral y Escrita</div>
+      <div class="ramo" data-id="DES101">Liderazgo Moral</div>
+      <div class="ramo" data-id="TAC011">Taller Actualización I</div>
+    </div>
+
+    <!-- SEGUNDO SEMESTRE -->
+    <div class="semestre">
+      <h2>2° Semestre</h2>
+      <div class="ramo" data-id="MAT102" data-requiere="MAT101">Cálculo I</div>
+      <div class="ramo" data-id="DPB103" data-requiere="INV101">Pensamiento Lógico, Crítico y Creativo</div>
+      <div class="ramo" data-id="PRG102" data-requiere="PRG101">Programación II</div>
+      <div class="ramo" data-id="DMC103" data-requiere="MAT101">Algebra II</div>
+      <div class="ramo" data-id="INV102" data-requiere="INV101">Investigación I</div>
+      <div class="ramo" data-id="DES102" data-requiere="DES101">Desarrollo de la Civilización</div>
+    </div>
+
+    <!-- TERCER SEMESTRE -->
+    <div class="semestre">
+      <h2>3° Semestre</h2>
+      <div class="ramo" data-id="TED104" data-requiere="DPB103">Taller de Emprendimiento</div>
+      <div class="ramo" data-id="PRG103" data-requiere="PRG102">Programación III</div>
+      <div class="ramo" data-id="DPC101" data-requiere="PRG101">Base de Datos I</div>
+      <div class="ramo" data-id="ICO101" data-requiere="PRG101">Sistemas Operativos I</div>
+      <div class="ramo" data-id="DMC104" data-requiere="MAT102">Cálculo II</div>
+      <div class="ramo" data-id="IDM101" data-requiere="INV101">Idioma Extranjero I</div>
+      <div class="ramo" data-id="TAC012" data-requiere="TAC011">Taller Actualización II</div>
+    </div>
+
+    <!-- CUARTO SEMESTRE -->
+    <div class="semestre">
+      <h2>4° Semestre</h2>
+      <div class="ramo" data-id="PRG104" data-requiere="PRG103">Programación IV</div>
+      <div class="ramo" data-id="DPC102" data-requiere="DPC101">Base de Datos II</div>
+      <div class="ramo" data-id="ICO102" data-requiere="ICO101">Redes I</div>
+      <div class="ramo" data-id="IDM102" data-requiere="IDM101">Idioma Extranjero II</div>
+      <div class="ramo" data-id="INV103" data-requiere="INV102">Investigación II</div>
+      <div class="ramo" data-id="DES103" data-requiere="DES102">Paradigmas de Desarrollo</div>
+    </div>
+
+    <!-- QUINTO SEMESTRE -->
+    <div class="semestre">
+      <h2>5° Semestre</h2>
+      <div class="ramo" data-id="PRG105" data-requiere="PRG104">Algoritmos Avanzados</div>
+      <div class="ramo" data-id="PRG106" data-requiere="PRG104">Aplicaciones Móviles</div>
+      <div class="ramo" data-id="DPI101" data-requiere="DPC102">Ingeniería Web I</div>
+      <div class="ramo" data-id="ICO103" data-requiere="ICO101">Sistemas Operativos II</div>
+      <div class="ramo" data-id="ICO104" data-requiere="ICO102">Redes II</div>
+      <div class="ramo" data-id="DMC105" data-requiere="DMC104">Investigación Operativa</div>
+      <div class="ramo" data-id="TAC013" data-requiere="TAC012">Taller Actualización III</div>
+    </div>
+
+    <!-- SEXTO SEMESTRE -->
+    <div class="semestre">
+      <h2>6° Semestre</h2>
+      <div class="ramo" data-id="PRG107" data-requiere="PRG106">Programación de Aplicaciones Móviles</div>
+      <div class="ramo" data-id="DPI102" data-requiere="DPI101">Ingeniería Web II</div>
+      <div class="ramo" data-id="DPI103" data-requiere="DPI102">Ingeniería de Software</div>
+      <div class="ramo" data-id="DPI104" data-requiere="DPI102">Planificación de Proyectos</div>
+      <div class="ramo" data-id="DPC103" data-requiere="DPC102">Base de Datos III</div>
+      <div class="ramo" data-id="DES105" data-requiere="DES103">Realidad Nacional</div>
+    </div>
+
+    <!-- SEPTIMO SEMESTRE -->
+    <div class="semestre">
+      <h2>7° Semestre</h2>
+      <div class="ramo" data-id="DPI105" data-requiere="DPI102">Ingeniería Web III</div>
+      <div class="ramo" data-id="DPC104" data-requiere="PRG107">Diseño Crossmedia</div>
+      <div class="ramo" data-id="DPC105" data-requiere="DPC103">Seguridad en Sistemas</div>
+      <div class="ramo" data-id="DPC106" data-requiere="DPI103">Comercio Electrónico</div>
+      <div class="ramo" data-id="IDM103" data-requiere="IDM102">Idioma Extranjero III</div>
+      <div class="ramo" data-id="INV104" data-requiere="INV103">Trabajo de Graduación</div>
+      <div class="ramo" data-id="TAC014" data-requiere="TAC013">Taller de Actualización IV</div>
+    </div>
+
+    <!-- OCTAVO SEMESTRE -->
+    <div class="semestre">
+      <h2>8° Semestre</h2>
+      <div class="ramo" data-id="PRG108" data-requiere="PRG107">Gamificación y Programación Funcional</div>
+      <div class="ramo" data-id="DPI106" data-requiere="DPI105">Taller de Ingeniería Web</div>
+      <div class="ramo" data-id="INV105" data-requiere="INV104">Taller de Graduación</div>
+      <div class="ramo" data-id="DPC107" data-requiere="DPC105">Auditoría de Sistemas</div>
+      <div class="ramo" data-id="DPC108" data-requiere="DPC106">Taller de Redes</div>
+      <div class="ramo" data-id="TAC015" data-requiere="TAC014">Taller de Actualización V</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
